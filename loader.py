@@ -5,6 +5,7 @@ import pandas as pd
 
 DATA_PATH = 'data/MMM_MMM_DAE.csv'
 
+pritn('hello')
 def download_data(url, force_download=False, ):
     # Utility function to donwload data if it is not in disk
     data_path = os.path.join('data', os.path.basename(url.split('?')[0]))
