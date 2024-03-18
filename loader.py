@@ -4,7 +4,11 @@ import numpy as np
 import pandas as pd
 
 
-DATA_PATH_STEP1 = 'sample_dirty.csv'
+# Obtenez le chemin absolu du répertoire du script Python en cours d'exécution
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+DATA_PATH_STEP1 = os.path.join(current_dir, 'data/MMM_MMM_DAE.csv')
+
 
 def sample_formatted(data_csv):
     # still need to choose which columns we have to keep
@@ -38,24 +42,43 @@ def sample_sanitized(df_local):
 
 
 def sample_framed(df_local):
-    df_local.rename(columns={'dermnt': 'der_mnt', 'tel1': 'tel_num1'}, inplace=True)
+    # Fusionner 'adr_num' et 'adr_voie' en une seule colonne 'adresse'
+    df_local['adresse'] = df_local['adr_num'] + ' ' + df_local['adr_voie']
+    # Supprimer les colonnes 'adr_num' et 'adr_voie'
+    df_local.drop(columns=['adr_num', 'adr_voie'], inplace=True)
+    # Déplacer la colonne 'adresse' en deuxième position
+    cols = df_local.columns.tolist()
+    cols.insert(1, cols.pop(cols.index('adresse')))
+    df_local = df_local.reindex(columns=cols)
 
+    # Fusionner 'lat_coor1' et 'long_coor1' en une seule colonne 'coordonnees'
+    df_local['coordonnees'] = df_local['lat_coor1'].astype(str) + ', ' + df_local['long_coor1'].astype(str)
+    # Supprimer les colonnes 'lat_coor1' et 'long_coor1'
+    df_local.drop(columns=['lat_coor1', 'long_coor1'], inplace=True)
+
+
+    df_local.rename(columns={'dermnt': 'der_mnt', 'tel1': 'tel_num1'}, inplace=True)
+    print(df_local)
     return df_local
 
 
 df=sample_formatted(DATA_PATH_STEP1)
+print("------------------------------------------------------------------------------------------------------------------------------------")
 df=sample_sanitized(df)
+print("------------------------------------------------------------------------------------------------------------------------------------")
 df=sample_framed(df)
+print("------------------------------------------------------------------------------------------------------------------------------------")
+
 
 
 DATA_PATH = 'data/MMM_MMM_DAE.csv'
 
-def sample_formatted(data_csv):
-    kept_columns = ['nom,lat_coor1,x,long_coor1,y,adr_num,adr_voie,com_cp,com_insee,com_nom,acc,acc_lib,acc_pcsec,acc_acc,acc_etg,acc_complt,photo1,photo2,disp_j,disp_h,disp_compl,tel1,tel2,site_email,date_insta,etat_fonct,fab_siren,fab_rais,mnt_siren,mnt_rais,modele,num_serie,id_euro,lc_ped,dtpr_lcped,dtpr_lcad,dtpr_bat,freq_mnt,dispsurv,dermnt,expt_siren,expt_rais,expt_tel1,expt_tel2,expt_email,ref,id,appartenan,dae_mobile,date1insta,chgtpiles']
-    pd.read_csv(data_csv)
-    print(data_csv)
+# def sample_formatted(data_csv):
+#     kept_columns = ['nom,lat_coor1,x,long_coor1,y,adr_num,adr_voie,com_cp,com_insee,com_nom,acc,acc_lib,acc_pcsec,acc_acc,acc_etg,acc_complt,photo1,photo2,disp_j,disp_h,disp_compl,tel1,tel2,site_email,date_insta,etat_fonct,fab_siren,fab_rais,mnt_siren,mnt_rais,modele,num_serie,id_euro,lc_ped,dtpr_lcped,dtpr_lcad,dtpr_bat,freq_mnt,dispsurv,dermnt,expt_siren,expt_rais,expt_tel1,expt_tel2,expt_email,ref,id,appartenan,dae_mobile,date1insta,chgtpiles']
+#     pd.read_csv(data_csv)
+#     print(data_csv)
 
-sample_formatted('sample_dirty.csv')
+# sample_formatted('sample_dirty.csv')
 
 
 
@@ -91,8 +114,8 @@ def load_formatted_data(data_fname:str) -> pd.DataFrame:
 
 # once they are all done, call them in the general sanitizing function
 def sanitize_data(df:pd.DataFrame) -> pd.DataFrame:
-    """ One function to do all sanitizing"""
-    ...
+    """One function to do all sanitizing"""
+    ... 
     return df
 
 
