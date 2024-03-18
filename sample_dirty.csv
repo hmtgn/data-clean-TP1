@@ -1,8 +1,18 @@
 ﻿nom,lat_coor1,x,long_coor1,y,adr_num,adr_voie,com_cp,com_insee,com_nom,acc,acc_lib,acc_pcsec,acc_acc,acc_etg,acc_complt,photo1,photo2,disp_j,disp_h,disp_compl,tel1,tel2,site_email,date_insta,etat_fonct,fab_siren,fab_rais,mnt_siren,mnt_rais,modele,num_serie,id_euro,lc_ped,dtpr_lcped,dtpr_lcad,dtpr_bat,freq_mnt,dispsurv,dermnt,expt_siren,expt_rais,expt_tel1,expt_tel2,expt_email,ref,id,appartenan,dae_mobile,date1insta,chgtpiles
 "Plateau sportif de GrammontTerrain 9, 10, 11",3.93392108647369,775412.3055,43.6136351580956,6279844.1872, ,avenue albert Einstein,34000,34172,Montpellier,int�rieur,non,non,oui,0, , , ,"lundi, mardi, mercredi, jeudi, vendredi",Heures ouvrables,-,334 67 64 87 70, , ,2017-12-1,En fonctionnement, ,ZOLL, , ,AED PLUS,X17I955734, ,oui,2021-02-02,2023-01-14,2022-12-1,tous les ans, ,2019-05-15,213401722,personne morale,334 67 34 70 00, ,mairie@ville-montpellier.fr,GARCIA  Serge,22,Mairie,non,,
-
-
-
+MIBI, ,0, ,0, , ,0,0, , , , , ,0, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ,0,M�tropole, ,,
+MAISON POUR TOUS LEO LAGRANGE, ,0, ,0,155,Rue de Bologne,34172,34080,Montpellier,int�rieur,oui,non,oui,0, , , ,"lundi, mardi, mercredi, jeudi, vendredi",Heures ouvrables, ,+334 67 40 33 57, , ,2020-10-06,En fonctionnement, ,ZOLL, , ,AED PLUS,X19J215834, , ,2021-08-17,2024-12-28,2025-10-06,Tous les ans, ,2020-10-06,213401722,personne morale,+334 67 34 70 00, ,mairie@ville-montpellier.fr, ,0,Mairie,non,,
+Ecole maternelle Louis-Figuier - Ecole �l�mentaire Paul Bert- Victor Hugo,3.8818749427812,771221.6974,43.6040988665753,6278736.0725,14,rue Farges,34000,34172,Montpellier,int�rieur,non,non,non,0,DAE sur Ecole FIGUIER, , ,"lundi, mardi, mercredi, jeudi, vendredi",Heures ouvrables,Fermeture possible pendant les vacances scolaires,334 67 65 64 89, , ,2019-12-01,En fonctionnement, ,ZOLL, , ,AED PLUS,X19J215359, , ,2021-08-17,2024-12-28,2024-12-01,Tous les ans, ,2019-12-01,213401722,personne morale,334 67 34 70 00, ,mairie@ville-montpellier.fr, ,103,Mairie,non,,
+DOMAINE DE LA PROVIDENCE,3.85389338631754,768980.54,43.5886305715036,6276992.18,1784, avenue de Toulouse,0,34172,Montpellier, , , , ,0, , , , , , ,"334 99 64 25 80", , , , , , , , , , , , , , , , , , , , , , , , ,53, , ,,
+TAM,3.88022105891879,771082.13,43.6089439482991,6279273.03, ,Parking com�die centre ville,0,34172,Montpellier, , , , ,0, , , , , , ,334 67 07 63 79, , , , , , , , , , , , , , , , , , , , , , , , ,60, , ,,
+"Universit� Montpellier 1 UFR d'Economie  (1er �tage, � c�t� des bureaux de l'administration)",3.89956526846159,772650.81,43.6037249115369,6278710.63, ,avenue raymond Dugrand,0,34172,Montpellier, , , , ,0, , , , , , ,334 34 43 24 44, , , , , , , , , , , , , , , , , , , , , , , , ,65, , ,,
+Universit� Montpellier 1 ISEM IPAG (Loge),3.8990452616492,772608.14,43.6042583122995,6278769.43, ,Espace richter B�t b Vend�miaire,0,34172,Montpellier, , , , ,0, , , , , , ,334 67 15 85 46, , , , , , , , , , , , , , , , , , , , , , , , ,64, , ,,
+Lyc�e Fr�d�ric Bazille,3.86390111725397,769719.19,43.6460180785944,6283378.58,3224, route de Mende,0,34172,Montpellier, , , , ,0, , , , , , ,334 67 63 89 87, , , , , , , , , , , , , , , , , , , , , , , , ,103, , ,,
+Cour d'appel,3.87282077771908,770481.67,43.6112848768186,6279526.55,1, rue Foch,0,34172,Montpellier, , , , ,0, , , , , , ,334 34 08 81 92, , , , , , , , , , , , , , , , , , , , , , , , ,113, , ,,
+Caf�t�ria UFR AES,3.89935221425315,772634.49,43.6030249922346,6278632.65,257-269,rue Vend�miaire,0,34172,Montpellier, , , , ,0, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ,152, , ,,
+IRC KLESIA AGIRC ARRCO,3.88335468668432,771335.08,43.6090204702181,6279284.36,26,all�e Jules Milhau,34263,34172,Montpellier, , , , ,0,RDC Immeuble Le triangle, , ,7j/7,24h/24, ,334 67 58 56 46, , , ,En fonctionnement, , , , , , , , , , , , , , , , , , , , ,188,IRC KLESIA AGIRC ARRCO, ,,
+ ,3.86982233698134,770237.7162,43.6127835439949,6279690.429,"1 place Jacques Mirouse, MONTPELLIER","1 place Jacques Mirouse, MONTPELLIER",34000,34172,Montpellier,int�rieur,non,non,non,0, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ,0, , ,,
+DAE Ext�rieur rue syracuse, ,0, ,0, ,Rue syracuse,34000,34172, ,Ext�rieur, , , ,0, , , ,7j/7,24h/24, ,334 67 34 70 26, , , , , , , , , , , , , , , , , , , , , , , , ,0,Mairie, ,,
 
 
 
