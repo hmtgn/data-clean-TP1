@@ -1,6 +1,6 @@
 import pytest
 import pandas as pd
-
+from loader import load_clean_data
 # This script contains tests for the cleaning functions and should be
 # completed by you
 

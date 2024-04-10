@@ -107,9 +107,9 @@ df=frame_data(df)
 print("------------------------------------------------------------------------------------------------------------------------------------")
 
 # if the module is called, run the main loading function
+
 if __name__ == '__main__':
     df = load_clean_data(download_data(url_mtp))
-
 
 
 
